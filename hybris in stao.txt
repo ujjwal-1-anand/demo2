@@ -1,0 +1,45 @@
+to start hybris with b2c accelerator plus 
+ 
+step 1: open cmd with path C:\CXCOMM190500P_0-70004140\installer
+ 
+step 2: command 
+ 
+                install -r b2c_acc_plus -A initAdminPassword=rahul12
+
+
+step 2.5: open file C:\CXCOMM190500P_0-70004140\hybris\config\local.properties
+
+          paste 
+                cronjob.timertask.loadonstartup=false
+ 
+step 3: open cmd with path C:\CXCOMM190500P_0-70004140\hybris\bin\platform
+ 
+step 4: command 
+ 
+                setantenv
+
+                ant all 
+
+                hybrisserver
+
+website
+https://localhost:9002/yacceleratorstorefront/?site=electronics
+
+backoffice
+https://localhost:9002/backoffice/login.zul
+psswrd which you used 
+
+HAC
+https://localhost:9002
+psswrd which you used 
+
+solr 
+https://localhost:8983/solr/#/ 
+solradmin	admin123	admin user can perform any operation
+solrserver	server123	for communication between server nodes
+solrclient	client123	can perform search queries
+
+
+
+INC1050433-- VCS calculation
+INC1052779---closed 2 hr 18 min INbentiry list 
